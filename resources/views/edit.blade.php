@@ -1,12 +1,12 @@
 @extends('layouts.base')
 
 @section('content')
-<div class="row">
-    <div class="col-12">
-        <div>
-            <h2>Editar Tarea</h2>
-        </div>
-        <div>
+<div class="row" style="width: 70%; margin: 0 auto;">
+<div class="col-12">
+        <div style="padding-top: 56px; display: flex; justify-content: space-between; align-items: center">
+            <h2 style="font-weight: bold;">Editar Tarea</h2>
+        
+       
             <a href="{{route('tasks.index')}}" class="btn btn-primary">Volver</a>
         </div>
     </div>

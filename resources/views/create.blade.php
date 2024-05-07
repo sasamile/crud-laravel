@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('content')
-<div class="row">
+<div class="row" style="width: 70%; margin: 0 auto;">
     <div class="col-12">
         <div style="padding-top: 56px; display: flex; justify-content: space-between; align-items: center">
             <h2 style="font-weight: bold;">Crear Tarea</h2>
@@ -24,13 +24,13 @@
     </div>
     @endif
 
-    <form action="{{route('tasks.store')}}" method="POST">
+    <form action="{{route('tasks.store')}}" method="POST" >
         @csrf
-        <div class="row" style="width: 70%; margin: 0 auto;">
+        <div class="row" >
             <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
                 <div class="form-group">
                     <strong>Tarea:</strong>
-                    <input type="text" name="title" class="form-control" placeholder="Tarea">
+                    <input type="text" name="title" class="form-control" placeholder="Tarea" style="color:black;">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
