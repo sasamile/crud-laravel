@@ -52,7 +52,7 @@
                         <option value="">-- Elige el status --</option>
                         <option value="Pendiente">Pendiente</option>
                         <option value="En progreso">En progreso</option>
-                        <option value="Completada">Completada</option>
+                        <option value="Completo">Completada</option>
                     </select>
                 </div>
             </div>
