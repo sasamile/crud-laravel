@@ -3,10 +3,10 @@
 @section('content')
 <div class="row">
     <div class="col-12">
-        <div>
-            <h2>Crear Tarea</h2>
-        </div>
-        <div>
+        <div style="padding-top: 56px; display: flex; justify-content: space-between; align-items: center">
+            <h2 style="font-weight: bold;">Crear Tarea</h2>
+        
+       
             <a href="{{route('tasks.index')}}" class="btn btn-primary">Volver</a>
         </div>
     </div>
@@ -26,7 +26,7 @@
 
     <form action="{{route('tasks.store')}}" method="POST">
         @csrf
-        <div class="row">
+        <div class="row" style="width: 70%; margin: 0 auto;">
             <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
                 <div class="form-group">
                     <strong>Tarea:</strong>
@@ -56,8 +56,9 @@
                     </select>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-2">
-                <button type="submit" class="btn btn-primary">Crear</button>
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-2" style="padding-top: 26
+            px;">
+                <button type="submit"  style="padding: 0.5rem 2rem; background-color: #3490dc; color: white; border-radius: 10px; border: none;">Crear</button>
             </div>
         </div>
     </form>

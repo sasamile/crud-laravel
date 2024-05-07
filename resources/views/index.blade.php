@@ -4,21 +4,21 @@
 <div class="row">
 
     <div style="display:grid; grid-template-columns: 2; justify-content: center; align-items: center;">
-        
-            <h2 style="color: white; font-weight: bold; text-transform: uppercase; padding-top: 100px; padding-bottom: 5px;">CRUD de Tareas</h2>
-        
 
-       
-            <a href="{{route('tasks.create')}}" class="btn btn-primary">Crear tarea</a>
+        <h2 style="color: white; font-weight: bold; text-transform: uppercase; padding-top: 100px; padding-bottom: 5px;">CRUD de Tareas</h2>
 
-        
+
+
+        <a href="{{route('tasks.create')}}" class="btn btn-primary">Crear tarea</a>
+
+
     </div>
 
 
 
 
     @if(Session::get('success'))
-    <div class="alert alert-success">
+    <div class="alert alert-success" style="margin-top: 26px;">
         <strong>{{ Session::get('success') }}</strong> <br>
     </div>
     @endif
